@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
-import { Header } from "../components/shared/header";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Nunito } from 'next/font/google';
+import { Header } from '../components/shared/header';
+import './globals.css';
 
 const nunito = Nunito({
-  subsets: ["cyrillic"],
-  variable: "--font-nunito",
-  weight: ["400", "500", "600", "700", "800", "900"],
+  subsets: ['cyrillic'],
+  variable: '--font-nunito',
+  weight: ['400', '500', '600', '700', '800', '900'],
 });
 
 export const metadata: Metadata = {
-  title: "Next Pizza by AZ dev",
-  description: "Website was created by AZdev, join my GitHub",
+  title: 'Next Pizza by AZ dev',
+  description: 'Website was created by AZdev, join my GitHub',
 };
 
 export default function RootLayout({

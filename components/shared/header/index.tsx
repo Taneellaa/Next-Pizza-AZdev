@@ -1,16 +1,13 @@
-import { cn } from "@/lib/utils";
-import React from "react";
-import { Container } from "./container";
-import Image from "next/image";
-import { Button } from "../ui";
-import { ArrowRight, ShoppingCart, User } from "lucide-react";
+import { cn } from '@/lib/utils';
+import type { FC } from 'react';
+import { Container } from '../container';
+import Image from 'next/image';
+import { Button } from '../../ui';
+import { ArrowRight, ShoppingCart, User } from 'lucide-react';
+import type { IHeaderProps } from './header.types';
 
-interface Props {
-  className?: string;
-}
-
-export const Header: React.FC<Props> = ({ className }) => (
-  <header className={cn("border border-b", className)}>
+export const Header: FC<IHeaderProps> = ({ className }) => (
+  <header className={cn('border border-b', className)}>
     <Container className="flex items-center justify-between py-8">
       <div className="flex items-center gap-4">
         <Image src="/logo.png" alt="logo" width={35} height={35} />
