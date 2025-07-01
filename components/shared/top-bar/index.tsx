@@ -1,15 +1,11 @@
-import React from 'react';
+import type { FC } from 'react';
 import { cn } from '@/lib/utils';
-import { Container } from './container';
-import { Categories } from './categories';
-import { SortPopup } from './sort-popup';
-import { Title } from './title';
+import { Container } from '../container';
+import { Categories } from '../categories';
+import { SortPopup } from '../sort-popup';
 
-interface Props {
-  className?: string;
-}
-
-export const TopBar: React.FC<Props> = ({ className }) => {
+import type { ITopBarProps } from './top-bar.types';
+export const TopBar: FC<ITopBarProps> = ({ className }) => {
   return (
     <div
       className={cn(
@@ -19,7 +15,6 @@ export const TopBar: React.FC<Props> = ({ className }) => {
     >
       <Container className="mt-10">
         <Categories />
-
         <SortPopup />
       </Container>
     </div>
