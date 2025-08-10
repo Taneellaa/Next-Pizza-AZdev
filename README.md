@@ -4,7 +4,7 @@ This project is a **hands-on learning experience** with **Next.js**, designed to
 
 ## 🔧 Tech Stack & Features  
 
-- 🔹 **TypeScript** – Ensuring type safety & maintainability.  
+- 🔹 **TypeScript**
 - 🎨 **ShadCN UI** – A sleek and customizable UI component library.  
 - ✨ **Lucide-react icons** – Beautiful and lightweight SVG icons for a polished design.  
 
